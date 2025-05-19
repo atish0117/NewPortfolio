@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@theme{
+    --color-primary: #050816; 
+    --color-secondary:#86D3FF; 
+    --color-tertiary: #151030;
+    --color-black-100: #100d25;
+    --color-black-200: #090325;
+    --color-white-100: #f3f3f3;
+    --color-avocado-400: oklch(0.92 0.19 114.08);
+    
+  }
+  
+  .black-gradient {
+    @apply bg-gradient-to-r from-[#45d4ffa5] to-[#080808]
+  }
+
+  .blue-gradient {
+  @apply bg-gradient-to-l from-[#45D4FF] to-[rgba(60,51,80,0)];
+}
+

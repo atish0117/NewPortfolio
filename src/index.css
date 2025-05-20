@@ -1,13 +1,17 @@
 @import "tailwindcss";
 
 @theme{
-    --color-primary: #050816; 
+    --color-primary: #01061c; 
     --color-secondary:#86D3FF; 
-    --color-tertiary: #151030;
+    --color-tertiary: #010829;
     --color-black-100: #100d25;
     --color-black-200: #090325;
     --color-white-100: #f3f3f3;
     --color-avocado-400: oklch(0.92 0.19 114.08);
+
+    --shadow-card: 0px 35px 120px -15px #211e35;
+
+  --breakpoint-xs: 450px;
     
   }
   
@@ -17,5 +21,9 @@
 
   .blue-gradient {
   @apply bg-gradient-to-l from-[#45D4FF] to-[rgba(60,51,80,0)];
+}
+
+.green-pink-gradient {
+  @apply bg-gradient-to-r from-[#00cea8] to-[#5a57ff];
 }
 

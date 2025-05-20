@@ -10,7 +10,7 @@ const AnimatedParagraph = () => {
     </>,
     <>
       As a{" "}
-      <span className="font-semibold text-white">Full-Stack Web Developer</span>, I specialize in turning ideas into responsive, intuitive, and visually stunning web experiences.
+      <span className="font-semibold text-white">Full-Stack Web Developer</span>, I specialize in turning <br /> ideas into responsive, intuitive, and visually stunning web experiences.
     </>,
     <>
       With a keen eye for detail and a love for clean code, I craft digital products that are as{" "}

@@ -5,6 +5,7 @@ import { BrowserRouter } from "react-router-dom";
 import herobg4 from "./assets/herobg4.png";
 import Hero from "./Components/Hero";
 import About from "./Components/About";
+import Experience from "./Components/Experience";
 function App() {
   return (
     <>
@@ -14,10 +15,10 @@ function App() {
            <Navbar />
           <div className=" bg-fixed bg-cover bg-no-repeat bg-center"
             style={{ backgroundImage: `url(${herobg4})` }}>
-           
             <Hero />
           </div>
           <About/>
+          <Experience/>
         </div>
             </ParallaxProvider>
       </BrowserRouter>

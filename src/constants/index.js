@@ -27,9 +27,9 @@ import {
   firebase,
   Azios,
   express,
-  GitHub,
   Python,
   cloudinary,
+  githubTech,
 } from "../assets";
 
 export const navLinks = [
@@ -120,10 +120,10 @@ const technologies = [
     name: "Python",
     icon: Python,
   },
-  // {
-  //   name: "Appwrite",
-  //   icon: appwrite,
-  // },
+  {
+    name: "Appwrite",
+    icon: appwrite,
+  },
   {
     name: "Firebase",
     icon: firebase,
@@ -135,6 +135,14 @@ const technologies = [
   {
     name: "Express",
     icon: express
+  },
+   {
+    name: "GitHub",
+    icon: githubTech,
+  },
+  {
+    name: "Cloudinary",
+    icon: cloudinary
   },
 
 ];

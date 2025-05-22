@@ -25,8 +25,8 @@ import Azios from "./tech/Azios.png";
 import cloudinary from "./tech/cloudinary.svg";
 import express from "./tech/express.png";
 import firebase from "./tech/firebase.png";
-import GitHub from "./tech/GitHub.png";
 import Python from "./tech/Python.png";
+import githubTech from "./tech/githubTech.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -36,6 +36,7 @@ import tesla from "./company/tesla.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import Tech from "../Components/Tech";
 
 
 export {
@@ -72,6 +73,6 @@ export {
   cloudinary,
   express,
   firebase,
-  GitHub,
   Python,
+  githubTech,
 };

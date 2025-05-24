@@ -33,7 +33,7 @@ import {
   Blogspace,
   LMS,
   Dreamer,
-  Deepnap,
+  Deepnap_softTech,
 
 } from "../assets";
 
@@ -156,7 +156,7 @@ const experiences = [
   {
     title: "React.js Developer",
     company_name: "Deepnap softTech",
-    icon: Deepnap,
+    icon: Deepnap_softTech,
     iconBg: "#383E56",
     date: "jun 2024 - jan 2025",
     points: [

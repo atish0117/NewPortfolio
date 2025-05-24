@@ -33,7 +33,7 @@ import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 import Dreamer from "./company/Dreamer.png";
-import Deepnap_softTech from "./company/Deepnap_softTech.png";
+import Deepnap_SoftTech from "./company/Deepnap_SoftTech.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -45,7 +45,7 @@ import Tech from "../Components/Tech";
 
 export {
   logo,
-  Deepnap_softTech,
+  Deepnap_SoftTech,
   Dreamer,
   Blogspace,
   LMS,

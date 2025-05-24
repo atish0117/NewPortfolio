@@ -9,11 +9,14 @@ import Experience from "./Components/Experience";
 import Tech from "./Components/Tech";
 import Works from "./Components/Works";
 import Feedbacks from "./Components/Feedbacks";
+import Contact from "./Components/Contact";
+import { Toaster } from "react-hot-toast";
 function App() {
   return (
     <>
       <BrowserRouter>
           <ParallaxProvider>
+               <Toaster position="top-center" reverseOrder={false} />
         <div className="relative z-0 bg-primary">
           <div className=" bg-fixed bg-cover bg-no-repeat bg-center"
             style={{ backgroundImage: `url(${herobg4})` }}>
@@ -25,6 +28,7 @@ function App() {
           <Tech/>
           <Works/>
           <Feedbacks/>
+          <Contact/>
         </div>
             </ParallaxProvider>
       </BrowserRouter>

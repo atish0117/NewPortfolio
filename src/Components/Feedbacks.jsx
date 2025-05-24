@@ -5,7 +5,7 @@ import { styles } from "../Styles";
 import  SectionWrapper  from "../hoc/SectionWrapper";
 import { fadeIn, textVariant } from "../utils/motion";
 import { testimonials } from "../constants";
-
+import FeedbackForm from "./FeedbackForm";
 const FeedbackCard = ({
   index,
   testimonial,
@@ -59,6 +59,8 @@ const Feedbacks = () => {
           <FeedbackCard key={testimonial.name} index={index} {...testimonial} />
         ))}
       </div>
+          <FeedbackForm/>
+
     </div>
   );
 };

@@ -32,15 +32,23 @@ import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
+import Dreamer from "./company/Dreamer.png";
+import Deepnap from "./company/Deepnap softTech.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import Blogspace from "./Blogspace.png";
+import LMS from "./LMS.png";
 import Tech from "../Components/Tech";
 
 
 export {
   logo,
+  Deepnap,
+  Dreamer,
+  Blogspace,
+  LMS,
   backend,
   creator,
   mobile,

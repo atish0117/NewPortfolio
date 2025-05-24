@@ -38,7 +38,7 @@ import Deepnap_SoftTech from "./company/Deepnap_SoftTech.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
-import Blogspace from "./Blogspace.png";
+import Blogspace from "./BlogSpace.png";
 import LMS from "./LMS.png";
 import Tech from "../Components/Tech";
 

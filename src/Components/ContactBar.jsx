@@ -41,12 +41,12 @@ const ContactBar = () => {
 
   const socialLinks = [
     {
-      href: "https://linkedin.com",
+      href: "https://linkedin.com/in/atish-kumar-6856a42ba",
       Icon: FaLinkedinIn,
       label: "LinkedIn",
     },
     {
-      href: "https://github.com",
+      href: "https://github.com/atish0117",
       Icon: FaGithub,
       label: "GitHub",
     },
@@ -56,20 +56,20 @@ const ContactBar = () => {
       label: "Instagram",
     },
     {
-      href: "https://wa.me/your-number",
+      href: "https://wa.me/9716436292",
       Icon: FaWhatsapp,
       label: "WhatsApp",
     },
   ];
 
   if (isMobile) {
-    // ✅ MOBILE VERSION: Fixed to right side, scrollable page
+    //  MOBILE VERSION: Fixed to right side, scrollable page
     return (
-      <div className="fixed right-2 bottom-20 z-50 flex flex-col items-end gap-3">
+      <div className="fixed right-1 top-30 z-50 flex flex-col items-end gap-3">
         {/* Toggle Button (Profile Icon) */}
         <button
           onClick={() => setMenuOpen(!menuOpen)}
-          className="w-12 h-12 rounded-full bg-blue-600 text-white flex items-center justify-center shadow-lg"
+          className="w-12 h-12 rounded-full bg-[#45D4FF] text-white flex items-center justify-center shadow-lg"
         >
           <FaUserAlt size={20} />
         </button>
@@ -82,7 +82,7 @@ const ContactBar = () => {
               href={href}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-10 h-10 rounded-full bg-white dark:bg-gray-800 border border-blue-500 text-blue-600 dark:text-blue-400 flex items-center justify-center shadow-md"
+              className="w-10 h-10 rounded-full bg-white dark:bg-gray-800 border border-cyan-500 text-[#45D4FF]  dark:text-cyan-500 hover:bg-[#45D4FF] hover:text-white flex items-center justify-center shadow-md"
               initial={{ opacity: 0, x: 30 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: index * 0.05, type: "spring", stiffness: 300 }}
@@ -95,7 +95,7 @@ const ContactBar = () => {
     );
   }
 
-  // ✅ DESKTOP VERSION
+  // DESKTOP VERSION
   return (
     <div className="flex flex-col md:flex-row items-center justify-center gap-6 p-5 rounded-3xl dark:bg-tertiary bg-transparent transition-colors duration-300">
       {/* Contact Button */}
@@ -107,7 +107,7 @@ const ContactBar = () => {
         }}
         whileTap={{ scale: 0.97 }}
         transition={{ type: "spring", stiffness: 300, damping: 15 }}
-        className="group relative inline-flex items-center gap-2 px-6 py-3 rounded-full bg-blue-600 text-white font-semibold text-sm overflow-hidden"
+        className="group relative inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#45D4FF] text-white font-semibold text-sm overflow-hidden"
       >
         Contact me!
         <motion.span
@@ -129,9 +129,9 @@ const ContactBar = () => {
             href={href}
             target="_blank"
             rel="noopener noreferrer"
-            className="group relative w-10 h-10 rounded-full border border-blue-500 
-              text-blue-600 dark:text-blue-400 flex items-center justify-center 
-              hover:bg-blue-600 hover:text-white transition-all duration-300 
+            className="group relative w-10 h-10 rounded-full border border-cyan-500 
+              text-[#45D4FF] dark:text-cyan-500 flex items-center justify-center 
+              hover:bg-[#45D4FF] hover:text-white transition-all duration-300 
               animate-pulse hover:animate-none"
           >
             <Icon

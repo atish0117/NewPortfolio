@@ -14,6 +14,15 @@
   --breakpoint-xs: 450px;
     
   }
+
+ @keyframes spin-slow {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.animate-spin-slow {
+  animation: spin-slow 6s linear infinite;
+}
+
   
   .black-gradient {
     @apply bg-gradient-to-r from-[#45d4ffa5] to-[#080808]

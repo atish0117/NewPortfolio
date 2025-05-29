@@ -51,17 +51,23 @@ const Hero = () => {
 
 </div>
 
-        <div className=" w-1/2 flex justify-center items-center   ">
-  <div className="relative w-80 h-80 rounded-full overflow-hidden">
-    {/* Glowing animated border */}
-    <div className="absolute inset-0 rounded-full animate-spin border-4 border-transparent border-t-yellow-400 border-r-yellow-300 z-0"></div>
+<div className="w-1/2 flex justify-center items-center">
+  <div className="relative w-80 h-80 rounded-full flex overflow-hidden items-center justify-center group">
+    
+    {/* Glowing Pulsating Halo */}
+    <div className="absolute inset-0 rounded-full bg-[#00FFD5] opacity-30 blur-2xl animate-pulse z-0"></div>
+    
+    {/* Rotating Gradient Ring */}
+    <div className="absolute inset-0 rounded-full border-4 border-transparent border-t-[#00FFD5] border-b-[#00FFF0]  animate-spin-slow z-30"></div>
 
-    {/* Profile Image */}
-    <img
-      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjZxmtr6vrB1BwgDHDPUD-f54TNTnwLFEP-Q&s"
-      alt="Profile"
-      className="w-full h-full object-cover rounded-full relative z-10"
-    />
+    {/* Avatar Image */}
+    <div className="w-[288px] h-[288px] rounded-7xl  overflow-hidden relative z-20 border-2 border-white shadow-xl">
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjZxmtr6vrB1BwgDHDPUD-f54TNTnwLFEP-Q&s"
+        alt="Profile"
+        className="w-full h-full object-cover"
+      />
+    </div>
   </div>
 </div>
 

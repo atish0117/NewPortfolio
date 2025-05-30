@@ -55,10 +55,10 @@ const Hero = () => {
   <div className="relative w-80 h-80 rounded-full flex overflow-hidden items-center justify-center group">
     
     {/* Glowing Pulsating Halo */}
-    <div className="absolute inset-0 rounded-full bg-[#00FFD5] opacity-30 blur-2xl animate-pulse z-0"></div>
+    <div className="absolute inset-0 rounded-full bg-[#45D4FF] opacity-30 blur-2xl animate-pulse z-0"></div>
     
     {/* Rotating Gradient Ring */}
-    <div className="absolute inset-0 rounded-full border-4 border-transparent border-t-[#00FFD5] border-b-[#00FFF0]  animate-spin-slow z-30"></div>
+    <div className="absolute inset-0 rounded-full border-4 border-transparent border-t-[#45D4FF] border-b-[#45D4FF]  animate-spin-slow z-30"></div>
 
     {/* Avatar Image */}
     <div className="w-[288px] h-[288px] rounded-7xl  overflow-hidden relative z-20 border-2 border-white shadow-xl">

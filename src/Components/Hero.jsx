@@ -51,28 +51,10 @@ const Hero = () => {
 
 </div>
 
-<div className="w-1/2 flex justify-center items-center">
-  <div className="relative w-80 h-80 rounded-full flex overflow-hidden items-center justify-center group">
-    
-    {/* Glowing Pulsating Halo */}
-    <div className="absolute inset-0 rounded-full bg-[#45D4FF] opacity-30 blur-2xl animate-pulse z-0"></div>
-    
-    {/* Rotating Gradient Ring */}
-    <div className="absolute inset-0 rounded-full border-4 border-transparent border-t-[#45D4FF] border-b-[#45D4FF]  animate-spin-slow z-30"></div>
-
-    {/* Avatar Image */}
-    <div className="w-[288px] h-[288px] rounded-7xl  overflow-hidden relative z-20 border-2 border-white shadow-xl">
-      <img
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjZxmtr6vrB1BwgDHDPUD-f54TNTnwLFEP-Q&s"
-        alt="Profile"
-        className="w-full h-full object-cover"
-      />
-    </div>
-  </div>
-</div>
 
 
-    <div className="absolute bottom-5 right-5 md:bottom-30 md:right-20 z-0  ">
+
+    <div className="absolute bottom-5 right-5 md:bottom-30 md:right-20 z-30  ">
     <ContactBar />
   </div>
     </div>

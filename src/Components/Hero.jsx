@@ -51,6 +51,20 @@ const Hero = () => {
 
 </div>
 
+<div className="w-96 h-96 rounded-2xl flex justify-center items-center relative">
+  {/* Background Color Box */}
+  <div className="w-48 h-72 bg-yellow-300 rounded-3xl absolute top-0 left-45 z-0 shadow-lg"></div>
+
+  {/* Image Box */}
+  <div className="w-48 h-72 bg-white rounded-3xl overflow-hidden relative z-10 shadow-lg">
+    <img
+      src="https://via.placeholder.com/150"
+      alt="Sample"
+      className="w-full h-full object-cover"
+    />
+  </div>
+</div>
+
 
 
 

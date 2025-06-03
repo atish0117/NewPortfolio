@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <section className={`relative w-full h-screen mx-auto `}>
       <div
-        className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
+        className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5 `}
       >
       {/* line */}
         <div className="flex flex-col justify-center items-center mt-5">
@@ -18,7 +18,7 @@ const Hero = () => {
         </div>
 
           {/* left part */}
-        <div className="flex flex-col justify-center ">
+        <div className="flex flex-col justify-center  ">
           <h1 className={`${styles.heroHeadText} text-white`}>
             Hi, I'm <span className="text-[#45D4FF]">Atish</span>
           </h1>
@@ -51,24 +51,36 @@ const Hero = () => {
 
 </div>
 
-<div className="w-96 h-96 rounded-2xl flex justify-center items-center relative">
-  {/* Background Color Box */}
-  <div className="w-48 h-72 bg-yellow-300 rounded-3xl absolute top-0 left-45 z-0 shadow-lg"></div>
+<div className="relative w-full md:w-2/5 h-[400px] flex items-end group">
+  {/* Background Color Box (behind the image card) */}
+  {/* <div className="absolute top-0 left-1/2 -translate-x-1/2 w-80 h-72 bg-gradient-to-br from-blue-200 to-cyan-400 rounded-3xl z-0 shadow-xl group-hover:rotate-1 group-hover:scale-105 transition-all duration-300"></div> */}
 
-  {/* Image Box */}
-  <div className="w-48 h-72 bg-white rounded-3xl overflow-hidden relative z-10 shadow-lg">
+  {/* Image Card with border and morphism */}
+  <div className="relative w-full h-[360px] bg-[#45D4FF]/20 border-none border-white/10 rounded-t-3xl overflow-visible shadow-lg z-10 backdrop-blur-sm">
+    {/* Image overflowing from top */}
     <img
-      src="https://via.placeholder.com/150"
-      alt="Sample"
-      className="w-full h-full object-cover"
+      src="/heroimg.png"
+      alt="My Work"
+      className="absolute -top-20 w-full h-[calc(100%+80px)] object-contain object-[center_bottom] transition-transform duration-700"
     />
+
+    {/* Subtle gradient overlay at bottom */}
+    <div className="absolute bottom-0 w-full h-20 bg-gradient-to-t from-tertiary/80 to-transparent pointer-events-none"></div>
+
+    {/* Decorative floating dots */}
+    <div className="absolute -bottom-5 -right-5 w-16 h-16 bg-cyan-400 rounded-full opacity-20 group-hover:opacity-30 transition-opacity duration-300"></div>
+    <div className="absolute -top-5 -left-5 w-10 h-10 bg-blue-600 rounded-full opacity-20 group-hover:opacity-30 transition-opacity duration-300"></div>
   </div>
+
+  {/* Outer glow effect behind everything */}
+  <div className="absolute inset-0 rounded-3xl bg-cyan-500/10 group-hover:bg-cyan-500/20 transition-all duration-500 -z-10"></div>
 </div>
 
 
 
 
-    <div className="absolute bottom-5 right-5 md:bottom-30 md:right-20 z-30  ">
+
+    <div className="absolute bottom-5  right-5 md:bottom-45.5 md:right-20 z-0  ">
     <ContactBar />
   </div>
     </div>

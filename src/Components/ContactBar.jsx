@@ -97,7 +97,7 @@ const ContactBar = () => {
 
   // DESKTOP VERSION
   return (
-    <div className="flex flex-col md:flex-row items-center justify-center gap-6 p-5 rounded-3xl dark:bg-tertiary bg-transparent transition-colors duration-300">
+    <div className="flex flex-col md:flex-row items-center justify-center gap-6 p-6.5 rounded-b-3xl dark:bg-tertiary bg-transparent transition-colors duration-300">
       {/* Contact Button */}
       <motion.a
         href="#contact"

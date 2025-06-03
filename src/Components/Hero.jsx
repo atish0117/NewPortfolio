@@ -7,24 +7,24 @@ import AnimatedParagraph from "./AnimatedParagraph";
 import ContactBar from "./ContactBar";
 const Hero = () => {
   return (
-    <section className={`relative w-full h-screen mx-auto `}>
+    <section className={`relative w-full min-h-screen flex flex-col justify-center items-center mx-auto overflow-hidden`}>
       <div
-        className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5 `}
+        className={`relative z-10 w-full max-w-7xl mx-auto ${styles.paddingX} flex flex-col-reverse md:flex-row items-center justify-between gap-5 pt-30 md:pt-0`}
       >
       {/* line */}
-        <div className="flex flex-col justify-center items-center mt-5">
+        <div className="hidden md:flex  flex-col justify-center items-center mt-5">
           <div className="w-5 h-5 rounded-full bg-[#45D4FF]" />
           <div className="w-1 sm:h-96 h-80 blue-gradient" />
         </div>
 
           {/* left part */}
-        <div className="flex flex-col justify-center  ">
+        <div className=" flex-1 flex flex-col justify-center items-start text-left w-full  ">
           <h1 className={`${styles.heroHeadText} text-white`}>
             Hi, I'm <span className="text-[#45D4FF]">Atish</span>
           </h1>
             <AnimatedParagraph />
 
-<div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 mt-4">
+<div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 mt-6">
   {/* View Resume */}
   <a
         href="/public/webDeveloperResume.pdf"
@@ -51,12 +51,12 @@ const Hero = () => {
 
 </div>
 
-<div className="relative w-full md:w-2/5 h-[400px] flex items-end group">
+<div className="relative w-full md:w-2/5 sm:h-[350px] h-[400px] flex items-end group">
   {/* Background Color Box (behind the image card) */}
   {/* <div className="absolute top-0 left-1/2 -translate-x-1/2 w-80 h-72 bg-gradient-to-br from-blue-200 to-cyan-400 rounded-3xl z-0 shadow-xl group-hover:rotate-1 group-hover:scale-105 transition-all duration-300"></div> */}
 
   {/* Image Card with border and morphism */}
-  <div className="relative w-full h-[360px] bg-[#45D4FF]/20 border-none border-white/10 rounded-t-3xl overflow-visible shadow-lg z-10 backdrop-blur-sm">
+  <div className="relative w-full h-[90%] bg-[#45D4FF]/20 border-none border-white/10 rounded-t-3xl overflow-visible shadow-lg z-10 backdrop-blur-sm">
     {/* Image overflowing from top */}
     <img
       src="/heroimg.png"
@@ -80,7 +80,7 @@ const Hero = () => {
 
 
 
-    <div className="absolute bottom-5  right-5 md:bottom-45.5 md:right-20 z-0  ">
+    <div className="absolute bottom-5  right-5 md:-bottom-10 md:right-9 md:z-0 z-10  ">
     <ContactBar />
   </div>
     </div>

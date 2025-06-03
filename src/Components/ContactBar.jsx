@@ -97,7 +97,7 @@ const ContactBar = () => {
 
   // DESKTOP VERSION
   return (
-    <div className="flex flex-col md:flex-row items-center justify-center gap-6 p-6.5 rounded-b-3xl dark:bg-tertiary bg-transparent transition-colors duration-300">
+    <div className="flex flex-col md:flex-row items-center justify-center gap-6 p-9.5 rounded-b-3xl dark:bg-tertiary bg-transparent transition-colors duration-300">
       {/* Contact Button */}
       <motion.a
         href="#contact"
@@ -138,14 +138,14 @@ const ContactBar = () => {
               className="transition-transform duration-500 group-hover:rotate-12"
               size={18}
             />
-            <span
-              className="absolute bottom-full mb-2 left-1/2 -translate-x-1/2 
-                text-xs text-white dark:text-gray-200 bg-black dark:bg-gray-800 
-                px-2 py-1 rounded opacity-0 scale-0 group-hover:scale-100 group-hover:opacity-100 
-                transition-all duration-300 origin-bottom"
-            >
-              {label}
-            </span>
+           <span
+  className="absolute top-full mt-2 left-1/2 -translate-x-1/2 
+    text-xs text-white dark:text-gray-200 bg-black dark:bg-gray-800 
+    px-2 py-1 rounded opacity-0 scale-0 group-hover:scale-100 group-hover:opacity-100 
+    transition-all duration-300 origin-top"
+>
+  {label}
+</span>
           </a>
         ))}
       </div>

@@ -8,14 +8,14 @@ const AnimatedParagraph = () => {
       <span className="text-[#45D4FF] font-semibold">engineer by skill</span> and a{" "}
       <span className="text-[#45D4FF] font-semibold">creator by passion</span>.
     </>,
-    // ❌ This line will be hidden on mobile
+    // This line will be hidden on mobile
     <>
       <span className="hidden md:inline">
         As a{" "}
         <span className="font-semibold text-white">Full-Stack Web Developer</span>, I specialize in turning <br /> ideas into responsive, intuitive, and visually stunning web experiences.
       </span>
     </>,
-    // ❌ This line will be hidden on mobile
+    //  This line will be hidden on mobile
     <>
       <span className="hidden md:inline">
         With a keen eye for detail and a love for clean code, <br /> I craft digital products that are as{" "}

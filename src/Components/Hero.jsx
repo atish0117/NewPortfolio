@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import { Parallax } from "react-scroll-parallax";
 import { styles } from "../Styles";
 import { FaFilePdf, FaDownload } from "react-icons/fa";
-import sideImg from "../assets/sideImg.png"
 import AnimatedParagraph from "./AnimatedParagraph";
 import ContactBar from "./ContactBar";
 const Hero = () => {

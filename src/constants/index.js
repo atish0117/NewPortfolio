@@ -237,8 +237,7 @@ const testimonials = [
 const projects = [
   {
     name: "Blog Space",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+    description:"BlogSpace is a modern blogging web app where users can explore or shareblogs, with search & category filters. Supports login-based profile/blog management and works seamlessly without login too.",
     tags: [
       {
         name: "react",
@@ -260,7 +259,7 @@ const projects = [
   {
     name: "LMS",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Full-stack LMS using MERN, Redux, TailwindCSS with JWT auth, Razorpay payments, role-based access (Student, Mentor, Admin), course creation, video uploads, quizzes, progress tracking, certificates, and responsive dashboard.",
     tags: [
       {
         name: "react",
@@ -285,8 +284,7 @@ const projects = [
   {
     name: "JOB Website",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
+          "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",     tags: [
       {
         name: "React",
         color: "blue-text-gradient",

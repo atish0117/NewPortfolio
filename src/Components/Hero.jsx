@@ -58,7 +58,7 @@ const Hero = () => {
   <div className="relative w-full h-[90%] bg-[#45D4FF]/20 border-none border-white/10 rounded-t-3xl overflow-visible shadow-lg z-10 backdrop-blur-sm">
     {/* Image overflowing from top */}
     <img
-      src="/heroimg.png"
+      src="/heroimg.webp"
       alt="My Work"
       className="absolute -top-20 w-full h-[calc(100%+80px)] object-contain object-[center_bottom] transition-transform duration-700"
     />

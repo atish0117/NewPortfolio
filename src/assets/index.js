@@ -37,7 +37,7 @@ import Deepnap_SoftTech from "./company/Deepnap_SoftTech.webp";
 
 import carrent from "./carrent.webp";
 import jobit from "./jobit.webp";
-import tripguide from "./tripguide.png";
+import jobry from "./jobry.webp";
 import Blogspace from "./Blogspace.webp";
 import LMS from "./LMS.webp";
 import Tech from "../Components/Tech";
@@ -75,7 +75,7 @@ export {
   tesla,
   carrent,
   jobit,
-  tripguide,
+  jobry,
   appwrite,
   Azios,
   cloudinary,

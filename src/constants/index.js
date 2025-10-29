@@ -21,7 +21,7 @@ import {
   shopify,
   carrent,
   jobit,
-  tripguide,
+  jobry,
   threejs,
   appwrite,
   firebase,
@@ -298,7 +298,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: jobry,
     source_code_link: "https://github.com/atish0117/JobApplication",
   },
 ];

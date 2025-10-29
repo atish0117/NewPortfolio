@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Parallax, ParallaxProvider } from "react-scroll-parallax";
 import Navbar from "./Components/Navbar";
 import { BrowserRouter } from "react-router-dom";
-import herobg4 from "./assets/herobg4.png";
+import herobg4 from "./assets/herobg4.webp";
 import Hero from "./Components/Hero";
 import About from "./Components/About";
 import Experience from "./Components/Experience";

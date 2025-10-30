@@ -98,46 +98,46 @@ const ContactBar = () => {
 
   // DESKTOP VERSION
   return (
-    <div className="flex flex-col md:flex-row items-center justify-center gap-6 p-9.5 rounded-b-3xl dark:bg-tertiary bg-transparent transition-colors duration-300">
+    <div className="flex flex-col md:flex-row items-center justify-center gap-5 py-8 px-4 rounded-b-3xl dark:bg-tertiary bg-transparent transition-colors duration-300">
       {/* Contact Button */}
-      <motion.a
-        href="#contact"
-        whileHover={{
-          scale: 1.07,
-          boxShadow: "0px 0px 16px rgba(59, 130, 246, 0.6)",
-        }}
-        whileTap={{ scale: 0.97 }}
-        transition={{ type: "spring", stiffness: 300, damping: 15 }}
-        className="group relative inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#45D4FF] text-white font-semibold text-sm overflow-hidden"
-      >
-        Contact me!
-        <motion.span
-          className="inline-block"
-          initial={{ x: 0, y: 0 }}
-          whileHover={{ x: 4, y: -4 }}
-          transition={{ type: "spring", stiffness: 300 }}
+        <motion.a
+          href="#contact"
+          whileHover={{
+            scale: 1.07,
+            boxShadow: "0px 0px 16px rgba(59, 130, 246, 0.6)",
+          }}
+          whileTap={{ scale: 0.97 }}
+          transition={{ type: "spring", stiffness: 300, damping: 15 }}
+          className="group relative flex items-center  gap-5 px-6 py-1 rounded-full bg-[#45D4FF] text-white font-semibold text-md overflow-hidden"
         >
-          <FiArrowUpRight size={18} />
-        </motion.span>
-        <span className="absolute inset-0 rounded-full bg-blue-400 opacity-10 animate-ping pointer-events-none" />
-      </motion.a>
+          Contact me!
+          <motion.span
+            className="inline-block "
+            initial={{ x: 0, y: 0 }}
+            whileHover={{ x: 4, y: -4 }}
+            transition={{ type: "spring", stiffness: 300 }}
+          >
+            <FiArrowUpRight size={28} />
+          </motion.span>
+          <span className="absolute inset-0 rounded-full bg-blue-400 opacity-10 animate-ping pointer-events-none" />
+        </motion.a>
 
       {/* Social Icons */}
-      <div className="flex gap-4 md:gap-6 relative">
+      <div className="flex gap-3 md:gap-5 relative">
         {socialLinks.map(({ href, Icon, label }) => (
           <a
             key={label}
             href={href}
             target="_blank"
             rel="noopener noreferrer"
-            className="group relative w-10 h-10 rounded-full border border-cyan-500 
+            className="group relative w-13 h-13 rounded-full border border-cyan-500 
               text-[#45D4FF] dark:text-cyan-500 flex items-center justify-center 
               hover:bg-[#45D4FF] hover:text-white transition-all duration-300 
               animate-pulse hover:animate-none"
           >
             <Icon
               className="transition-transform duration-500 group-hover:rotate-12"
-              size={18}
+              size={26}
             />
            <span
   className="absolute top-full mt-2 left-1/2 -translate-x-1/2 

@@ -70,8 +70,9 @@ const ContactBar = () => {
         <button
           onClick={() => setMenuOpen(!menuOpen)}
           className="w-12 h-12 rounded-full bg-[#45D4FF] text-white flex items-center justify-center shadow-lg"
+          aria-label="social contact"
         >
-          <FaUserAlt size={20} />
+          <FaUserAlt  aria-hidden="true"  size={20} />
         </button>
 
         {/* Expanded Social Icons */}

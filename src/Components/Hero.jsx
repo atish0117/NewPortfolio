@@ -84,7 +84,7 @@ const Hero = () => {
     </div>
 
               <div className="absolute xs:bottom-0 bottom-0 w-full flex justify-center items-center">
-        <a href="#about">
+        <a href="#about" aria-label="Go to about section">
           <div className="w-[72px] h-[72px] rounded-md border-4 border-secondary flex justify-center items-center relative">
             {/* Dot 1: Left to Right (horizontal movement) */}
             <motion.div

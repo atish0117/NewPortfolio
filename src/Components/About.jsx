@@ -10,7 +10,8 @@ import SectionWrapper from "../hoc/SectionWrapper"
 import { fadeIn, textVariant } from "../utils/motion";
 
 const ServiceCard = ({ index, title, icon }) => (
-  <Tilt className='xs:w-[250px] w-1/2 '>
+  <Tilt className="w-full sm:w-[250px] flex justify-center">
+
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
       className=' green-pink-gradient w-full p-[1px] rounded-[20px] shadow-card'
@@ -26,7 +27,7 @@ const ServiceCard = ({ index, title, icon }) => (
         <img
           src={icon}
           alt='web-development'
-          className='w-16 h-16 object-contain'
+          className='w-25 h-25 object-contain'
         />
 
         <h3 className='text-white text-[20px] font-bold text-center'>
@@ -57,7 +58,7 @@ const About = () => {
         real-world problems. Let's work together to bring your ideas to life!
       </motion.p>
 
-      <div className='mt-20 flex flex-wrap gap-10'>
+      <div className='mt-20 flex flex-wrap gap-10  justify-center sm:justify-start'>
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}

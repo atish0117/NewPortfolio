@@ -26,7 +26,7 @@ const Hero = () => {
 <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 mt-6">
   {/* View Resume */}
   <a
-        href="/public/webDeveloperResume.pdf"
+        href="/public/atish_kumar.pdf"
     target="_blank"
     rel="noopener noreferrer"
     className="px-4 py-2 flex items-center gap-2 bg-[#45D4FF] text-black rounded-lg shadow hover:bg-sky-400 transition"
@@ -37,7 +37,7 @@ const Hero = () => {
 
   {/* Download Resume */}
   <a
-    href="/public/webDeveloperResume.pdf"
+    href="/public/atish_kumar.pdf"
     download
     className="px-4 py-2 flex items-center gap-2 bg-green-800 text-white rounded-lg shadow hover:bg-gray-700 transition"
   >

@@ -6,6 +6,9 @@
     --color-tertiary: #010829;
     --color-black-100: #0c0440;
     --color-black-200: #0c013d;
+    --color-black-300: #1a1558;
+    --color-black-400: #231f6e;
+    --color-black-500: #120a4d;
     --color-white-100: #f3f3f3;
     --color-avocado-400: oklch(0.92 0.19 114.08);
 
@@ -25,7 +28,7 @@
 
   
   .black-gradient {
-    @apply bg-gradient-to-r from-[#45d4ffa5] to-[#080808]
+    @apply bg-gradient-to-r from-[#45d4ffa5] to-[#010829]
   }
 
   .blue-gradient {
@@ -36,9 +39,7 @@
   @apply bg-gradient-to-r from-[#00cea8] to-[#5a57ff];
 }
 
-.black-gradient{
-  @apply bg-gradient-to-r from-[#434343] to-[#080808];
-}
+
 
 
 .green-text-gradient {

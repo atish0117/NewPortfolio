@@ -98,7 +98,21 @@ const ContactBar = () => {
 
   // DESKTOP VERSION
   return (
-    <div className="flex flex-col md:flex-row items-center justify-center gap-5 py-8 px-4 rounded-b-3xl dark:bg-tertiary bg-transparent transition-colors duration-300">
+<div
+  className="
+    w-full
+    max-w-full
+    flex flex-col md:flex-row
+    items-center justify-between
+    gap-4
+    px-4 md:px-6
+    py-6
+    rounded-b-3xl
+    bg-white/5
+    backdrop-blur-md
+    overflow-hidden
+  "
+>
       {/* Contact Button */}
         <motion.a
           href="#contact"
@@ -108,7 +122,17 @@ const ContactBar = () => {
           }}
           whileTap={{ scale: 0.97 }}
           transition={{ type: "spring", stiffness: 300, damping: 15 }}
-          className="group relative flex items-center  gap-5 px-6 py-1 rounded-full bg-[#45D4FF] text-white font-semibold text-md overflow-hidden"
+className="
+  shrink-0
+  flex items-center gap-3
+  px-5 py-2
+  rounded-full
+  bg-[#45D4FF]
+  text-white font-semibold
+  text-sm md:text-base
+  whitespace-nowrap
+"
+
         >
           Contact me!
           <motion.span
@@ -119,34 +143,56 @@ const ContactBar = () => {
           >
             <FiArrowUpRight size={28} />
           </motion.span>
-          <span className="absolute inset-0 rounded-full bg-blue-400 opacity-10 animate-ping pointer-events-none" />
+          <span className="absolute inset-0 rounded-full  " />
         </motion.a>
 
       {/* Social Icons */}
-      <div className="flex gap-3 md:gap-5 relative">
+      <div className="flex gap-3 md:gap-7 flex-wrap justify-end relative">
         {socialLinks.map(({ href, Icon, label }) => (
           <a
             key={label}
             href={href}
             target="_blank"
             rel="noopener noreferrer"
-            className="group relative w-13 h-13 rounded-full border border-cyan-500 
-              text-[#45D4FF] dark:text-cyan-500 flex items-center justify-center 
-              hover:bg-[#45D4FF] hover:text-white transition-all duration-300 
-              animate-pulse hover:animate-none"
-          >
+            className="
+  group relative
+  w-8 h-8 md:w-10 md:h-10
+  rounded-full
+  border border-cyan-500
+  text-[#45D4FF]
+  flex items-center justify-center
+  hover:bg-[#45D4FF] hover:text-white
+  transition-all duration-300
+">
             <Icon
               className="transition-transform duration-500 group-hover:rotate-12"
-              size={26}
+              size={20}
             />
-           <span
-  className="absolute top-full mt-2 left-1/2 -translate-x-1/2 
-    text-xs text-white dark:text-gray-200 bg-black dark:bg-gray-800 
-    px-2 py-1 rounded opacity-0 scale-0 group-hover:scale-100 group-hover:opacity-100 
-    transition-all duration-300 origin-top"
+         <span
+  className="
+    absolute
+    top-full
+    left-1/2
+    mt-0.5
+    -translate-x-1/2
+    whitespace-nowrap
+
+    text-xs text-white
+    bg-black/80
+    px-2 py-1
+    rounded-md
+
+    opacity-0 scale-95
+    group-hover:opacity-100 group-hover:scale-100
+
+    transition-all duration-200 ease-out
+    pointer-events-none
+    z-50
+  "
 >
   {label}
 </span>
+
           </a>
         ))}
       </div>
